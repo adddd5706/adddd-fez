@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script type="text/javascript" src="hitandblow.js"></script>
+        <meta charset="utf-8">
+        <title>FEZ-ヒットアンドブロー</title>
+    </head>
+    <form name="form" id="mainForm">
+        <body>
+            <div id="container" style="width:380px">
+                <div id="header">
+                    <h1>FEZ-ヒットアンドブロー</h1>
+                </div>
+                <div id="menu" style="width:230px; height:110px; float:left;">
+                    <label for="html">輸入數字</label>
+                    <input type="Text" id="input_Q" size=10 maxlength="4" style="font-size:15;">
+                    <input type="button" id="btn_execute" value="判斷" onclick="execute()">
+                    <br>
+                    <input type="Text" id = "input_S" size=1 maxlength="1" style="font-size:15;">
+                    <label for="html">ヒットH</label>
+                    <br>
+                    <input type="Text" id = "input_B" size=1  maxlength="1" style="font-size:15;">
+                    <label for="html">ブローB</label>
+                    <br>
+                    <input type="button" id="btn_Reset" value="重新開始" onclick="reset_game()">                
+                </div>                
+                <br>
+                <div id="hist" style="width:150px; height:100px; float:left;">
+                    <select id="history" size="7" style="width:100%; height:100%">
+                    </select>
+                </div>                
+                <div id="footer">
+                    <textarea id="txt_answer" style="width:100%; height:150px; resize:none"></textarea>
+                </div>
+                <div id="real_footer" align="center">
+                    <font size="2" color="#999999">
+                    輸入數字及Hit & Blow數后點擊判斷<br>
+                    <a class="tag-link" href="https://www.bilibili.com/video/BV1a44y137A7?share_source=copy_web" target="_blank" rel="noopener"><br>到 Bilibili 一鍵三連支持一下！<br></a>
+                    <br>
+                    <iframe src="//player.bilibili.com/player.html?aid=981172744&bvid=BV1a44y137A7&cid=710557852&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+                    <br>
+                    <a href="https://github.com/adddd5706" target="_blank">adddd5706</a>
+                    </font>
+                </div>
+                <div id="real_real_footer" align="center"><font size="1" color="#999999"><br>原作者: blackcat610<br></font></div>
+            </div>
+        </body>
+    </form>
+</html>
